@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    android:background="@drawable/custom_border"
+    android:id="@+id/rlForm"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/rlTvTitle"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Registration Form" />
+
+    <TextView
+        android:id="@+id/rlTvUsername"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlTvTitle"
+        android:layout_marginTop="16dp"
+        android:text="Username" />
+
+    <EditText
+        android:id="@+id/rlEtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlTvTitle"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/rlTvUsername" />
+
+    <TextView
+        android:id="@+id/rlTvEmail"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlEtUsername"
+        android:layout_marginTop="16dp"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/rlEtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/rlTvEmail"
+        android:layout_below="@id/rlEtUsername" />
+
+    <TextView
+        android:id="@+id/rlTvPassword"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlEtEmail"
+        android:layout_marginTop="16dp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/rlEtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlEtEmail"
+        android:layout_toEndOf="@id/rlTvPassword"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlEtPassword"
+        android:layout_centerHorizontal="true"
+        android:text="Submit" />
+
+</RelativeLayout>
