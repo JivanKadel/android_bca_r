@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="16dp"
+    android:id="@+id/alParent"
+    android:background="@drawable/custom_border"
+    >
+
+    <TextView
+        android:id="@+id/alTvTitle"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="0dp"
+        android:text="Registration form" />
+
+    <TextView
+        android:id="@+id/alTvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="50dp"
+        android:text="Username" />
+
+    <EditText
+        android:id="@+id/alEtUsername"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_x="80dp"
+        android:layout_y="50dp" />
+
+    <TextView
+        android:id="@+id/alTvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="120dp"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/alEtEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_x="80dp"
+        android:layout_y="110dp" />
+
+    <TextView
+        android:id="@+id/alTvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="180dp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/alEtPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_x="80dp"
+        android:layout_y="170dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_x="150dp"
+        android:layout_y="240dp"
+        />
+
+</AbsoluteLayout>
