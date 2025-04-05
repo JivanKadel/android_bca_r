@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widgets"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/custom_border"
+    tools:context=".widgets.WidgetsImplementationActivity">
+
+    <TextView
+        android:id="@+id/wiTvTitle"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Information Form"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/wiTvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:inputType="text"
+        android:text="Full Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wiTvTitle" />
+
+    <EditText
+        android:id="@+id/wiEtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/wiTvName" />
+
+    <TextView
+        android:id="@+id/wiTvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wiEtName" />
+
+    <EditText
+        android:id="@+id/wiEtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/wiTvEmail" />
+
+    <TextView
+        android:id="@+id/wiTvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Your Gender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wiEtEmail" />
+
+    <RadioGroup
+        android:id="@+id/wiRgGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/wiTvGender">
+
+        <RadioButton
+            android:id="@+id/wiRbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/wiRbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/wiRbNonBinary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decimal (Non Binary)" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/wiTvFaculty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Faculty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wiRgGender" />
+
+    <Spinner
+        android:id="@+id/wiSpinnerFaculty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/wiTvFaculty" />
+
+    <TextView
+        android:id="@+id/wiTvHobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hobbies"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wiSpinnerFaculty" />
+
+    <CheckBox
+        android:id="@+id/wiCbGrass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Touching Grass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wiTvHobbies" />
+
+    <CheckBox
+        android:id="@+id/wiCbOutside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Going Outside"
+        app:layout_constraintStart_toEndOf="@id/wiCbGrass"
+        app:layout_constraintTop_toBottomOf="@id/wiTvHobbies" />
+
+    <CheckBox
+        android:id="@+id/wiCbShowering"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Showering"
+        app:layout_constraintStart_toEndOf="@id/wiCbOutside"
+        app:layout_constraintTop_toBottomOf="@id/wiTvHobbies" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Yeah, That's about it!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wiCbShowering" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
