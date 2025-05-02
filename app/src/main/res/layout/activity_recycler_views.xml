@@ -5,25 +5,25 @@
     android:id="@+id/rvParent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".viewgroups.RecyclerViewsActivity"
-    android:padding="16dp">
+    android:padding="16dp"
+    tools:context=".viewgroups.RecyclerViewsActivity">
 
     <TextView
         android:id="@+id/rvTvTodosTitle"
+        style="@style/TextAppearance.AppCompat.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TODOS"
-        style="@style/TextAppearance.AppCompat.Title"
+        android:textSize="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_marginTop="16dp"
         android:id="@+id/rvTodos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/rvTvTodosTitle"
-        />
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/rvTvTodosTitle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
