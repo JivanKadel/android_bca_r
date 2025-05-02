@@ -19,12 +19,12 @@ public class RecyclerViewsActivity extends AppCompatActivity {
     TodoAdapter todoAdapter;
 
     Todo[] todos = new Todo[]{
-            new Todo("Touch Grass", "Today is the day we touch grass", false),
-            new Todo("Kiss the Sun", "Go outside, kiss the sun", true),
-            new Todo("No Media", "No FB, Reels, Anime for whole 3 hours (sounds impossible)", false),
-            new Todo("Read", "Not manga, fiction, romantic or mystery", true),
-            new Todo("Shower", "Take a plain bath", false),
-            new Todo("Socialization", "Meet new people, talk with relatives so you can hate them more", true)
+            new Todo("Name (for lab report)", "Jivan Kadel, 10, BCA, Samriddhi", true),
+            new Todo("MP Assignment", "Complete Android Assignments", false),
+            new Todo("Economics Assignment", "Complete Economics Assignment", true),
+            new Todo("AJP Assignment", "Advanced Java Assignment", false),
+            new Todo("DS Assignment", "Distributed System Assignment", true),
+            new Todo("NP Assignment", "Java Networking Assignment", false)
     };
 
     @Override
